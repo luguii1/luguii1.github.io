@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Estrevo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @media(max-width: 700px) {
+            body {
+                background-image: url('../imagens/papel-estrela.jpg');
+                background-size: cover;
+                height: 100vh;
+                padding: 0;
+                margin: 0;
+            }
+
+            #cabeca {
+                background-color: #ffff63;
+                display: flex;
+                padding: 0 5px 0 5px;
+                align-items: center;
+                justify-content: space-around;
+                border-bottom: solid 2px #d3d328;
+            }
+
+            #barras {
+                background-color: #ffffff00;
+                border: none;
+            }
+
+            #star,
+            #cloves {
+                border-radius: 50px;
+                border: solid 1px black;
+                background-color: rgba(255, 255, 255, 0);
+            }
+
+            main {
+                text-align: center;
+                padding: 10px;
+            }
+
+            video {
+                border: solid 2px black;
+                border-radius: 10px;
+            }
+
+            img {
+                width: 150px;
+                height: 150px;
+            }
+
+            section {
+                text-align: center;
+                display: flex;
+                align-items: center;
+                width: 300px;
+
+                padding: 0 10px 0 10px;
+            }
+
+            .bobinicio {
+                border: solid 1px black;
+                border-radius: 10px;
+                padding: 5px;
+                height: 100px;
+                overflow-y: auto;
+            }
+
+            #barrinha {
+                position: absolute;
+                left: -135px;
+                padding: 0 20px 20px 0;
+                background-color: #ebeb50;
+                width: 110px;
+                border-right: solid 2px #cece4b;
+                border-bottom: solid 2px #cece4b;
+                box-shadow: 1px 1px 4px black;
+                transition: left 0.3s;
+            }
+
+            ul {
+                position: relative;
+                right: 10px;
+            }
+
+            li {
+                margin-top: 10px;
+            }
+
+            #star {
+                background-color: #e5e619;
+                box-shadow: 0 2px black;
+                scale: 1.1;
+            }
+
+            details {
+                position: relative;
+                left: 10px;
+            }
+
+            a {
+                color: black;
+                outline: none;
+                border: none;
+            }
+            main h1 {
+                -webkit-animation: scale-up-top 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.2s backwards;
+                animation: scale-up-top 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.2s backwards;
+            }
+            @-webkit-keyframes scale-up-top{0%{-webkit-transform:scale(.5);transform:scale(.5);-webkit-transform-origin:50% 0;transform-origin:50% 0}100%{-webkit-transform:scale(1);transform:scale(1);-webkit-transform-origin:50% 0;transform-origin:50% 0}}@keyframes scale-up-top{0%{-webkit-transform:scale(.5);transform:scale(.5);-webkit-transform-origin:50% 0;transform-origin:50% 0}100%{-webkit-transform:scale(1);transform:scale(1);-webkit-transform-origin:50% 0;transform-origin:50% 0}}
+        }
+    </style>
+</head>
+
+<body>
+    <header id="cabeca">
+        <button id="barras" onclick="barras()"><i class="fa-solid fa-bars"></i></button>
+
+        <h1>Estrevo</h1>
+        <p>Escolha um tema:</p>
+        <button id="star" onclick="temaestrela()"><i class="fa-solid fa-star"></i></button>
+        <button id="cloves" onclick="tematrevo()"><i class="fa-solid fa-clover"></i></button>
+    </header>
+    <nav id="barrinha">
+        <ul>
+            <li><a href="../index.html">Início</a></li>
+            <li type="none"><a href="../fotos.html">Fotos</a></li>
+        </ul>
+        <details>
+            <summary>Textos</summary>
+            <ul>
+                <li><a href="textoaniversario.html">Textos aniversários.</a></li>
+                <li><a href="textos1ano.html">Textos 1 ano</a></li>
+                <li><a href="textos2anos.html">Textos 2 anos</a></li>
+                <li><a href="textos3anos.html">Textos 3 anos</a></li>
+                <li><a href="textos4anos.html">Textos 4 anos</a></li>
+            </ul>
+        </details>
+
+    </nav>
+    <main>
+        <h1>Texto</h1>
+        <h2 id="escolha">Estrela</h2>
+        <p id="texto">Minha princesa minha neném!!!!!!! Eu n sei nem como começar esse texto, mas eu vo falar q esse dia
+            é super super SUPER importante. Sério, é tanto tempo, tanto tempo que a gente fica surpreso, pq são 3 anos e
+            eu vou falar de novo igual da ultima vez, se antes era 730 dias juntos, hoje são 1096 amor! é um tempo
+            gigante, imagina quando a gente tiver com muitos anos e for muitos dias, vai ser incrivel e eu queri estar
+            do seu lado pra viver isso. Eu queria te falar que vc é muito importante, até pq, se eu to a 3 anos do seu
+            lado, é pq vc significa muito pra mim, e eu nunca vou esquecer de voce caso um dia a gente se separe, e eu n
+            quero q a gente separe. Ficar do seu lado é sentir todos os meus problemas indo embora, tudo que me deixe
+            mal você tira da mim, você é como se fosse uma cura, se eu chego ao seu lado, vejo seus olhos, seu sorriso,
+            sinto seu abraço, beijo, tudo q é problema some. Eu só agradeço por você ser essa pessoa que você é, q se
+            preocupa comigo, ta do meu lado em todos os dias bons e ruins, e eu so tenho a agradecer, pq isso é a prova
+            do seu amor por mim, a prova que voce me ama de verdade. Eu n sei nem como seria minha vida sem voce aqui, é
+            totalmente inimaginável, seria totalmente diferente. A minha vida depois que voce entrou p ela mudou
+            totalmente, como eu disse, você clareou totalmente oq era repleto de escuridão.. Obrigado por me ensinar a
+            viver, obrigado por ser a primeira em tudo, e que eu pretendo que seja a única. Eu n consigo ver vc triste e
+            nao tentar ajudar, te ver triste me deixa triste, te ver chorar me faz chorar, tanto q essas semanas vc me
+            viu chorar direto, acho q sou chorão. Você é totalmente especial, todo o meu coração é ocupado por você,
+            você tem uma casinha la com seus móveis bonitinhos dentro dele, você é totalmente especial dentro dele. Eu
+            vou dizer todo dia todo dia sempre q vc me mandar uma foto sua, vou dizer q você é uma mulher totalmente
+            perfeita, linda, seus olhos sao perfeitos e sua boca muito perfeita, linda e cheirosa
+            perfeita. E eu n poderia deixar de falar dos nossos momentos, momentos incríveis e inesquecíveis, de
+            momentos fofinhos ate rsrsrsrs kkkkkkk, sao momentos q a gente comenta e faz ser difícil de esquecer, pq
+            isso tudo faz parte da nossa história incrível, uma história com tantos problemas e a gente passa por todos,
+            msm sendo a maioria culpa minha, a gente passa por todos, desculpa. Mesmo assim, a gente tem um problema
+            grandão q a gente passa por ele, q é esconder, e a gente ta a 3 anos conseguindo seguir firme mesmo com
+            isso, e isso faz muito parte da nossa historia, so mostra que somos fortes!!!! E vida, eu so queria vive
+            contigo, te ter aqui todo dia, te ter do meu lado e a gente juntinhos, um dia a gente vai conseguir isso, e
+            vamos ficar juntinhos e mais feliz ainda, até pq, o nosso sonho vai ter se tornado realidade. Pois é amor,
+            eu só tenho a agradecer por todos esses 1096 do meu lado, você é extremamente especial e sem dúvidas fez
+            história na minha vida, e tenha certeza que é uma história linda e inesquecível, até pq eu te amo.
+
+            E sim meu amor, eu te amo demais demais demais demais demais demais demais demais demais demais demais
+            demais e demais, é um amor inexplicável, você é minha princesa, meu trevo de 4 folhas, meu suquinho de
+            maracujá delicioso 💕🫂💕🫂💕🫂💕🫂💕🫂💕🫂💕🫂💕🫂💕🫂💕🫂💕🫂💕🫂💕🫂💕🫂💕🫂💕🫂
+
+            Espero que tenha gostado do presente!!!!! </p>
+
+    </main>
+
+    <footer>
+
+    </footer>
+    <script>
+        function barras() {
+            let barra = document.getElementById('barrinha');
+            let barraatual = parseInt(barra.style.left, 10);
+            if (barraatual === 0) {
+                barra.style.left = '-135px';
+            } else {
+                barra.style.left = '0px';
+            }
+        }
+        function tematrevo() {
+            resetarBotoes();
+            let texto = document.getElementById('texto')
+            let escolha = document.getElementById('escolha')
+            let cabeca = document.getElementById('cabeca')
+            let barras = document.getElementById('barrinha')
+            let trevo = document.getElementById('cloves')
+            texto.innerHTML = 'nossa amor, 3 anos. 3 anos que a gente tá fazendo nossa própria história de amor, 3 anos de muita paciência, amor, estresse, tristezas, conquistas e outras coisas. É tão incrível saber que a gente tá conseguindo. Primeiramente, eu tenho que agradecer por tudo né, agradecer por estar comigo a 3 anos, agradecer por nunca me deixar, por sempre me apoiar e por também me amar. Quando eu te conheci, no comecinho, lá quando a gente completou 1; 2; 3 meses, eu sempre pensava que isso ia ser uma coisa que era passageiro, bom, metade eu achava, e a outra metade era por causa que as pessoas ao meu redor diziam isso, e olha, eu tinha acabado de parar de sentir uma atração por uma pessoa que não sentia o mesmo por mim e tinha medo de acontecer a mesma coisa de novo, tanto que eu tinha medo até de te beijar, mas olha só, a gente tá aqui, firme e forte. Minha estrelinha, meu amor por você é algo enorme, gigantesco, imenso. Saiba que você é o motivo de meus olhos brilharem toda vez que eu vejo algo referente a "amor" ou a "amar", saiba que seu sorriso é o motivo de cada batida acelerada que meu coração dá, saiba também que o motivo de eu viver, é estar aqui com você. Obrigada por me mostrar que amar é algo incrível, te amar é algo incrível. Em 3 anos aconteceram coisas inesquecíveis, sou grata por você me trazer felicidade, sou grata por tudo que você fez e faz por mim, te ter na minha vida é algo imensamente alegre. Eu tenho a gigantesca sorte de te ter, viver com você, compartilhar minha vida com você é algo esplêndido. Amor, sei que isso pode ser repetitivo mas, eu te amo e não quero te perder, quero viver minha vida inteirinha com você, só você, só você é capaz de estar aqui comigo, só você que me faz ser feliz, só você, somente você, não vejo a hora da gente conseguir tudo o que a gente deseja e sonha juntos.Esse dia é muito especial pra mim, eu lembro que quando você disse que me ama pela primeira vez, eu fiquei doidinha, nervosa, tremendo, e muito feliz, por saber que alguém me ama, nossa, você me ama, que loucura. Vida, você é literalmente minha vida, somente você me faz ter vontade de viver, obrigada por ser meu super herói, que me salvou muitas vezes quando eu queria ir embora, quando eu achava que não tinha motivos para viver aqui, obrigada por ser meu psicólogo por me ajudar em momentos bobos mas que são grandes pra mim. Não vejo minha vida sem você, não sei o que seria de mim se eu não tivesse você, não sei o que eu teria causado se eu não tivesse balançado minha cabecinha dizendo "sim" pra você a 3 anos atrás. Obrigada por me fazer me sentir suficiente por estar aqui, obrigada por me mostrar que eu sou algo meramente importante, obrigada por ser tão cuidadoso comigo quando eu estou mal, doente, triste. Você é luz, você é minha estrela que brilha quando eu penso que tudo é escuridão, você é meu ursinho que tem um abraço de consolo, você é meu maior bem precioso, meu diamante, você é a minha florzinha mais cheirosa de todas. Navegar esse barquinho com você, é difícil, mas eu amo a nossa persistência de não deixar ele afundar. E se não puder, ou, se não der certo, eu faço até o impossível pra viver eternamente com você, pq é nossa meta. Meu nenem cuti, ficar um dia sem ver você é horrível, você é a energia que eu preciso para poder aguentar tudo nessa vida. Você é inesquecível, todos os nossos momentos são inesquecíveis, nunca, jamais, irei me arrepender de ter você, e se algum dia eu fiz você pensar que eu me arrependo disso tudo, saiba que é totalmente mentira. Eu espero que nosso amor seja por bilhões e bilhões de anos, ou se possível, pra sempre. Eu te amo meu amor, eu te amo muito, quero te ter pra sempre, eu te amo demais, demais, demais mesmo. Obrigada por viver tudo isso comigo e por ter me escolhido pra viver pra sempre com você. Feliz 3 anos meu bem!!!!'
+            escolha.innerHTML = 'Trevo'
+            trevo.style.scale = '1.1'
+            trevo.style.background = '#008000'
+            trevo.style.boxShadow = '0 2px black'
+            document.body.style.backgroundImage = 'url("../imagens/papel-trevo.jpg")'
+            document.body.style.backgroundSize = 'cover'
+            barras.style.background = '#50eb50'
+            cabeca.style.background = '#79ff79'
+            barras.style.borderRight = 'solid 2px #238b23'
+            barras.style.borderBottom = 'solid 2px #238b23'
+            cabeca.style.borderBottom = 'solid 2px #238b23'
+        }
+
+        function temaestrela() {
+            resetarBotoes();
+            let cabeca = document.getElementById('cabeca')
+            let texto = document.getElementById('texto')
+            let escolha = document.getElementById('escolha')
+            let barras = document.getElementById('barrinha')
+            let estrela = document.getElementById('star')
+            escolha.innerHTML = 'Estrela'
+            texto.innerHTML = 'Minha princesa minha neném!!!!!!! Eu n sei nem como começar esse texto, mas eu vo falar q esse dia é super super SUPER importante. Sério, é tanto tempo, tanto tempo que a gente fica surpreso, pq são 3 anos e eu vou falar de novo igual da ultima vez, se antes era 730 dias juntos, hoje são 1096 amor! é um tempo gigante, imagina quando a gente tiver com muitos anos e for muitos dias, vai ser incrivel e eu queri estar do seu lado pra viver isso. Eu queria te falar que vc é muito importante, até pq, se eu to a 3 anos do seu lado, é pq vc significa muito pra mim, e eu nunca vou esquecer de voce caso um dia a gente se separe, e eu n quero q a gente separe. Ficar do seu lado é sentir todos os meus problemas indo embora, tudo que me deixe mal você tira da mim, você é como se fosse uma cura, se eu chego ao seu lado, vejo seus olhos, seu sorriso, sinto seu abraço, beijo, tudo q é problema some. Eu só agradeço por você ser essa pessoa que você é, q se preocupa comigo, ta do meu lado em todos os dias bons e ruins, e eu so tenho a agradecer, pq isso é a prova do seu amor por mim, a prova que voce me ama de verdade. Eu n sei nem como seria minha vida sem voce aqui, é totalmente inimaginável, seria totalmente diferente. A minha vida depois que voce entrou p ela mudou totalmente, como eu disse, você clareou totalmente oq era repleto de escuridão.. Obrigado por me ensinar a viver, obrigado por ser a primeira em tudo, e que eu pretendo que seja a única. Eu n consigo ver vc triste e nao tentar ajudar, te ver triste me deixa triste, te ver chorar me faz chorar, tanto q essas semanas vc me viu chorar direto, acho q sou chorão. Você é totalmente especial, todo o meu coração é ocupado por você, você tem uma casinha la com seus móveis bonitinhos dentro dele, você é totalmente especial dentro dele. Eu vou dizer todo dia todo dia sempre q vc me mandar uma foto sua, vou dizer q você é uma mulher totalmente perfeita, linda, seus olhos sao perfeitos e sua boca muito perfeita, linda e cheirosa perfeita. E eu n poderia deixar de falar dos nossos momentos, momentos incríveis e inesquecíveis, de momentos fofinhos ate rsrsrsrs kkkkkkk, sao momentos q a gente comenta e faz ser difícil de esquecer, pq isso tudo faz parte da nossa história incrível, uma história com tantos problemas e a gente passa por todos, msm sendo a maioria culpa minha, a gente passa por todos, desculpa. Mesmo assim, a gente tem um problema grandão q a gente passa por ele, q é esconder, e a gente ta a 3 anos conseguindo seguir firme mesmo com isso, e isso faz muito parte da nossa historia, so mostra que somos fortes!!!! E vida, eu so queria vive contigo, te ter aqui todo dia, te ter do meu lado e a gente juntinhos, um dia a gente vai conseguir isso, e vamos ficar juntinhos e mais feliz ainda, até pq, o nosso sonho vai ter se tornado realidade. Pois é amor, eu só tenho a agradecer por todos esses 1096 do meu lado, você é extremamente especial e sem dúvidas fez história na minha vida, e tenha certeza que é uma história linda e inesquecível, até pq eu te amo.E sim meu amor, eu te amo demais demais demais demais demais demais demais demais demais demais demais demais e demais, é um amor inexplicável, você é minha princesa, meu trevo de 4 folhas, meu suquinho de maracujá delicioso 💕🫂💕🫂💕🫂💕🫂💕🫂💕🫂💕🫂💕🫂💕🫂💕🫂💕🫂💕🫂💕🫂💕🫂💕🫂💕🫂 Espero que tenha gostado do presente!!!!! '
+            estrela.style.scale = '1.1'
+            document.body.style.backgroundImage = 'url("../imagens/papel-estrela.jpg")'
+            document.body.style.backgroundSize = 'cover'
+            estrela.style.background = '#e5e619'
+            estrela.style.boxShadow = '0 2px black'
+            barras.style.background = '#ebeb50'
+            cabeca.style.background = '#ffff63'
+            barras.style.borderRight = 'solid 2px #cece4b'
+            barras.style.borderBottom = 'solid 2px #cece4b'
+            cabeca.style.borderBottom = 'solid 2px #cece4b'
+        }
+        function resetarBotoes() {
+            const botoes = document.querySelectorAll('button');
+            botoes.forEach(botao => {
+                botao.style.scale = '1';
+                botao.style.background = '#ffffff00';
+                botao.style.boxShadow = 'none'
+            });
+
+        }
+
+
+    </script>
+</body>
+
+</html>

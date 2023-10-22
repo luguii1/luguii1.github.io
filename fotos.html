@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Estrevo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @media(max-width: 700px) {
+            body {
+                background-image: url('imagens/papel-estrela.jpg');
+                background-size: cover;
+                height: 100vh;
+                padding: 0;
+                margin: 0;
+            }
+
+            #cabeca {
+                background-color: #ffff63;
+                display: flex;
+                padding: 0 5px 0 5px;
+                align-items: center;
+                justify-content: space-around;
+                border-bottom: solid 2px #d3d328;
+            }
+
+            #barras {
+                background-color: #ffffff00;
+                border: none;
+            }
+
+            #star,
+            #cloves {
+                border-radius: 50px;
+                border: solid 1px black;
+                background-color: rgba(255, 255, 255, 0);
+            }
+
+            main {
+                text-align: center;
+                padding: 10px;
+
+            }
+
+            video {
+                border: solid 2px black;
+                border-radius: 10px;
+            }
+
+            img {
+                position: relative;
+                width: 150px;
+                height: 250px;
+                border: solid 2px black;
+                border-radius: 10px;
+                transition: all 0.3s;
+
+            }
+
+            img:hover {
+                width: 200px;
+                height: 300px;
+                box-shadow: 0 0 50px;
+            }
+
+            section {
+                text-align: center;
+                display: flex;
+                align-items: center;
+                width: 300px;
+
+                padding: 0 10px 0 10px;
+            }
+
+            .bobinicio {
+                border: solid 1px black;
+                border-radius: 10px;
+                padding: 5px;
+                height: 100px;
+                overflow-y: auto;
+            }
+
+            #barrinha {
+                position: absolute;
+                left: -135px;
+                padding: 0 20px 20px 0;
+                background-color: #ebeb50;
+                width: 110px;
+                border-right: solid 2px #cece4b;
+                border-bottom: solid 2px #cece4b;
+                box-shadow: 1px 1px 4px black;
+                transition: left 0.3s;
+                z-index: 1;
+            }
+
+            ul {
+                position: relative;
+                right: 10px;
+            }
+
+            li {
+                margin-top: 10px;
+            }
+
+            #star {
+                background-color: #e5e619;
+                box-shadow: 0 2px black;
+                scale: 1.1;
+            }
+
+            details {
+                position: relative;
+                left: 10px;
+            }
+
+            a {
+                color: black;
+                outline: none;
+                border: none;
+            }
+
+            .fotos {
+                display: flex;
+            }
+
+            div {
+                display: flex;
+                justify-content: center;
+                grid-gap: 10px;
+                flex-wrap: wrap;
+            }
+
+            main h1 {
+                -webkit-animation: scale-up-top 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.2s backwards;
+                animation: scale-up-top 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.2s backwards;
+            }
+            @-webkit-keyframes scale-up-top{0%{-webkit-transform:scale(.5);transform:scale(.5);-webkit-transform-origin:50% 0;transform-origin:50% 0}100%{-webkit-transform:scale(1);transform:scale(1);-webkit-transform-origin:50% 0;transform-origin:50% 0}}@keyframes scale-up-top{0%{-webkit-transform:scale(.5);transform:scale(.5);-webkit-transform-origin:50% 0;transform-origin:50% 0}100%{-webkit-transform:scale(1);transform:scale(1);-webkit-transform-origin:50% 0;transform-origin:50% 0}}
+
+        }
+    </style>
+</head>
+
+<body>
+    <header id="cabeca">
+        <button id="barras" onclick="barras()"><i class="fa-solid fa-bars"></i></button>
+
+        <h1>Estrevo</h1>
+        <p>Escolha um tema:</p>
+        <button id="star" onclick="temaestrela()"><i class="fa-solid fa-star"></i></button>
+        <button id="cloves" onclick="tematrevo()"><i class="fa-solid fa-clover"></i></button>
+    </header>
+    <nav id="barrinha">
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li type="none"><a href="fotos.html">Fotos</a></li>
+        </ul>
+        <details>
+            <summary>Textos</summary>
+            <ul>
+                <li><a href="textos/textoaniversario.html">Textos aniversários.</a></li>
+                <li><a href="textos/textos1ano.html">Textos 1 ano</a></li>
+                <li><a href="textos/textos2anos.html">Textos 2 anos</a></li>
+                <li><a href="textos/textos3anos.html">Textos 3 anos</a></li>
+                <li><a href="textos/textos4anos.html">Textos 4 anos</a></li>
+            </ul>
+        </details>
+
+    </nav>
+
+    <main>
+        <h1>Fotos</h1>
+        <p id="texto">Aqui terá todas as fotos juntas</p>
+        <div class="fotos">
+            <img src="imagens/fotos/foto1.jpg" alt="foto1">
+            <img src="imagens/fotos/foto2.jpg" alt="2">
+            <img src="imagens/fotos/foto3.jpg" alt="3">
+            <img src="imagens/fotos/foto4.jpg" alt="4">
+            <img src="imagens/fotos/foto5.webp" alt="5">
+            <img src="imagens/fotos/foto6.webp" alt="6">
+            <img src="imagens/fotos/foto7.webp" alt="7">
+            <img src="imagens/fotos/foto8.webp" alt="8">
+            <img src="imagens/fotos/foto9.jpg" alt="9">
+            <img src="imagens/fotos/foto10.webp" alt="10">
+            <img src="imagens/fotos/foto11.jpg" alt="11">
+            <img src="imagens/fotos/foto12.webp" alt="12">
+            <img src="imagens/fotos/foto14.jpg" alt="13">
+            <img src="imagens/fotos/foto16.jpg" alt="14">
+            <img src="imagens/fotos/foto17.jpg" alt="15">
+            <img src="imagens/fotos/foto18.jpg" alt="16">
+            <img src="imagens/fotos/foto19.jpg" alt="17">
+            <img src="imagens/fotos/foto20.jpg" alt="18">
+            <img src="imagens/fotos/foto21.jpg" alt="19">
+            <img src="imagens/fotos/foto22.jpg" alt="20">
+            <img src="imagens/fotos/foto23.jpg" alt="21">
+        </div>
+    </main>
+
+    <footer>
+
+    </footer>
+    <script>
+
+        function barras() {
+            let barra = document.getElementById('barrinha');
+            let barraatual = parseInt(barra.style.left, 10);
+            if (barraatual === 0) {
+                barra.style.left = '-135px';
+            } else {
+                barra.style.left = '0px';
+            }
+        }
+        function tematrevo() {
+            resetarBotoes()
+            let cabeca = document.getElementById('cabeca')
+            let barras = document.getElementById('barrinha')
+            let trevo = document.getElementById('cloves')
+            trevo.style.scale = '1.1'
+            trevo.style.background = '#008000'
+            trevo.style.boxShadow = '0 2px black'
+            document.body.style.backgroundImage = 'url("imagens/papel-trevo.jpg")'
+            document.body.style.backgroundSize = 'cover'
+            barras.style.background = '#50eb50'
+            cabeca.style.background = '#79ff79'
+            barras.style.borderRight = 'solid 2px #238b23'
+            barras.style.borderBottom = 'solid 2px #238b23'
+            cabeca.style.borderBottom = 'solid 2px #238b23'
+        }
+
+        function temaestrela() {
+            resetarBotoes();
+            let cabeca = document.getElementById('cabeca')
+            let barras = document.getElementById('barrinha')
+            let estrela = document.getElementById('star')
+            estrela.style.scale = '1.1'
+            document.body.style.backgroundImage = 'url("imagens/papel-estrela.jpg")'
+            document.body.style.backgroundSize = 'cover'
+            estrela.style.background = '#e5e619'
+            estrela.style.boxShadow = '0 2px black'
+            barras.style.background = '#ebeb50'
+            cabeca.style.background = '#ffff63'
+            barras.style.borderRight = 'solid 2px #cece4b'
+            barras.style.borderBottom = 'solid 2px #cece4b'
+            cabeca.style.borderBottom = 'solid 2px #cece4b'
+        }
+        function resetarBotoes() {
+            const botoes = document.querySelectorAll('button');
+            botoes.forEach(botao => {
+                botao.style.scale = '1';
+                botao.style.background = '#ffffff00';
+                botao.style.boxShadow = 'none'
+            });
+
+        }
+
+
+    </script>
+</body>
+
+</html>

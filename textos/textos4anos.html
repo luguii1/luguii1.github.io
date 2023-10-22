@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Estrevo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @media(max-width: 700px) {
+            body {
+                background-image: url('../imagens/papel-estrela.jpg');
+                background-size: cover;
+                height: 100vh;
+                padding: 0;
+                margin: 0;
+            }
+
+            #cabeca {
+                background-color: #ffff63;
+                display: flex;
+                padding: 0 5px 0 5px;
+                align-items: center;
+                justify-content: space-around;
+                border-bottom: solid 2px #d3d328;
+            }
+
+            #barras {
+                background-color: #ffffff00;
+                border: none;
+            }
+
+            #star,
+            #cloves {
+                border-radius: 50px;
+                border: solid 1px black;
+                background-color: rgba(255, 255, 255, 0);
+            }
+
+            main {
+                text-align: center;
+                padding: 10px;
+            }
+
+            video {
+                border: solid 2px black;
+                border-radius: 10px;
+            }
+
+            img {
+                width: 150px;
+                height: 150px;
+            }
+
+            section {
+                text-align: center;
+                display: flex;
+                align-items: center;
+                width: 300px;
+
+                padding: 0 10px 0 10px;
+            }
+
+            .bobinicio {
+                border: solid 1px black;
+                border-radius: 10px;
+                padding: 5px;
+                height: 100px;
+                overflow-y: auto;
+            }
+
+            #barrinha {
+                position: absolute;
+                left: -135px;
+                padding: 0 20px 20px 0;
+                background-color: #ebeb50;
+                width: 110px;
+                border-right: solid 2px #cece4b;
+                border-bottom: solid 2px #cece4b;
+                box-shadow: 1px 1px 4px black;
+                transition: left 0.3s;
+            }
+
+            ul {
+                position: relative;
+                right: 10px;
+            }
+
+            li {
+                margin-top: 10px;
+            }
+
+            #star {
+                background-color: #e5e619;
+                box-shadow: 0 2px black;
+                scale: 1.1;
+            }
+
+            details {
+                position: relative;
+                left: 10px;
+            }
+
+            a {
+                color: black;
+                outline: none;
+                border: none;
+            }
+            main h1 {
+                -webkit-animation: scale-up-top 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.2s backwards;
+                animation: scale-up-top 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.2s backwards;
+            }
+            @-webkit-keyframes scale-up-top{0%{-webkit-transform:scale(.5);transform:scale(.5);-webkit-transform-origin:50% 0;transform-origin:50% 0}100%{-webkit-transform:scale(1);transform:scale(1);-webkit-transform-origin:50% 0;transform-origin:50% 0}}@keyframes scale-up-top{0%{-webkit-transform:scale(.5);transform:scale(.5);-webkit-transform-origin:50% 0;transform-origin:50% 0}100%{-webkit-transform:scale(1);transform:scale(1);-webkit-transform-origin:50% 0;transform-origin:50% 0}}
+        }
+    </style>
+</head>
+
+<body>
+    <header id="cabeca">
+        <button id="barras" onclick="barras()"><i class="fa-solid fa-bars"></i></button>
+
+        <h1>Estrevo</h1>
+        <p>Escolha um tema:</p>
+        <button id="star" onclick="temaestrela()"><i class="fa-solid fa-star"></i></button>
+        <button id="cloves" onclick="tematrevo()"><i class="fa-solid fa-clover"></i></button>
+    </header>
+    <nav id="barrinha">
+        <ul>
+            <li><a href="../index.html">Início</a></li>
+            <li type="none"><a href="../fotos.html">Fotos</a></li>
+        </ul>
+        <details>
+            <summary>Textos</summary>
+            <ul>
+                <li><a href="textoaniversario.html">Textos aniversários.</a></li>
+                <li><a href="textos1ano.html">Textos 1 ano</a></li>
+                <li><a href="textos2anos.html">Textos 2 anos</a></li>
+                <li><a href="textos3anos.html">Textos 3 anos</a></li>
+                <li><a href="textos4anos.html">Textos 4 anos</a></li>
+            </ul>
+        </details>
+
+    </nav>
+    <main>
+        <h1>Texto</h1>
+        <h2 id="escolha">Estrela</h2>
+        <p id="texto">OIII MINHA PRINCESINHA MINHA NENEEM!!! Eu n consigo nem acreditar q isso chegou em uma fase tão big big big big, amor, a gente chegou nos 4 anos, tipo, 4 ANOS, 4 anos é quase metade de uma década, e tipo, é muito!!!!!!!!! serio amor, eu n consigo descrever o quanto eu to feliz pela gente, a gente é muito incrivel, chegamos em uma fase tao longa, mesmo com tantas coisas horríveis e ruins, eu sinto que sempre valeu a pena eu insistir tanto nisso, nunca ter desistido de você, e nunca deixar vc desistir de si mesma..  eu sei muito que você vai evoluir muito, e q vc vai ser uma grande pessoa, uma grande mulher. E sim, eu confio muito nisso, pq eu te acho uma menina incrível, eu tenho muita esperança deq vc vai ser feliz, com, ou sem mim. Meu bem, minha vida com você foi incrível, ver minha adolescência completa com você, ver q isso me ajudou a amadurecer, ver q isso me ensinou bastante coisa, só me faz melhor, assim como tambem me faz melhor quando eu estou do seu lado, sentindo seu cheiro, quando estamos pertos um do outro, é muito bom sentir essas sensações, e também aquelas la q vc sabe em gostosa!! Amor, continuando, te ver crescendo me faz sentir muito orgulho, eu te vi mudando muita coisa, eu te vi crescendo mentalmente e eu sinto muito orgulho por isso, até pq eu ensinei tudo, obviamente vc continua precisando melhorar, mas tudo q vc melhorou, me faz me sentir orgulho demais bebê. Minha loirinha, eu n sei como eu posso te explicar o quanto vc é especial pra mim, vc pode achar mil coisas, mas eu odeio quando vc fala q meu amor por você é inexistente, e não meu amor, não é, a gente pode passar por muitas fases, mas eu sei, e sei muito o quanto q vc é especial na minha vida e eu n posso deixar de te amar, e se um dia isso acontecer, saiba que eu vou ser muito triste. É meu trevo, sinto que a cada dia que passa vc faz mais parte de mim, tudo que a gente faz fica na minha mente, e embora eu nao demonstre, eu me sinto feliz tendo você comigo, pq é como se algo me
+            completasse, e é uma sensação muito boa minha gata. Eu so tenho a te agradecer por passar tanto tempo ao meu lado, tanto tempo juntos com tanto amor, e mesmo com varias coisas que impeçam da gente continuar, a gente continua, e é um exemplo de algo que possa se seguir, mesmo que tudo dê errado, não podemos desistir, e isso é algo que o nosso relacionamento nos ensinou, e que com certeza a gente deve levar pra vida inteira, o ensinamento deq nunca devemos desistir mesmo se tiver problemas. Vamos levar isso pra nossa vida amor, mesmo se a gente se separar um dia, algo que eu não espero, mas se acontecer, lembre disso. Vida, mesmo eu sendo uma pessoa esquecidinha, eu consigo lembrar de uns momentos nossos, até quando te pedi em namoro, e foi la que essa fase na minha vida comecou, foi la que eu senti que algo estivesse me completando, mas nao como o amor de Platão, assim como eu disse sexta, que eu senti meu amor crescer mais ainda, e eu não quero que deixe de crescer nunca, até pq eu quero sentir a sensação de ter você comigo sempre, eu ainda quero ser livre com vc. Meu suquinho, e enquanto as estações mudarem, eu prometo estar com você, eu prometo que eu não vou deixar de estar com você, eu irei continuar te apoiando e tentando te fazer feliz, mesmo te deixando estressada na maioria das vezes, e então, vc tbm me prometeria isso? Até pq, se sentir o nosso término foi tão doloroso, imagina sentir vc longe de mim. Muito obrigado por fazer parte da minha vida amor, eu n sei quantas vezes eu ja me senti feliz e ja abri vários sorrisos apenas vendo uma coisa simples, como a foto de perfil do nosso server kkkkkk. Muito obrigado por se abrir a compartilhar sua vida comigo, mesmo eu sendo uma pessoa horrivel as vezes, mesmo errando muito, obrigado por nao desistir de mim. E é assim meu amor, nunca vou desistir fácil da gente, assim como meus amigos disseram, que eu tenho muitos motivos pra terminar, mas eu não deixo você, e nem eu desistirmos. Muito obrigado por todos
+            os beijos, abraço, momentos rs e tudo mais meu amor, você me faz uma pessoa incrível. Eu te amo demais, meu brilhinho de pérola 💕🫂💕🫂</p>
+
+    </main>
+
+    <footer>
+
+    </footer>
+    <script>
+        function barras() {
+            let barra = document.getElementById('barrinha');
+            let barraatual = parseInt(barra.style.left, 10);
+            if (barraatual === 0) {
+                barra.style.left = '-135px';
+            } else {
+                barra.style.left = '0px';
+            }
+        }
+        function tematrevo() {
+            resetarBotoes();
+            let texto = document.getElementById('texto')
+            let escolha = document.getElementById('escolha')
+            let cabeca = document.getElementById('cabeca')
+            let barras = document.getElementById('barrinha')
+            let trevo = document.getElementById('cloves')
+            texto.innerHTML = '4 anos... 4 anos que escolhi viver uma história com você. Há 4 anos que me sinto a pessoa mais feliz do mundo. 4 anos de muitos altos e baixos. 4 anos que balancei a cabeça dizendo sim pra você. Amor, que gratificante viver tudo isso com você, construir uma vida com você, que incrível... Antes de tudo, como sempre, quero te dizer que sou grata por te ter comigo, por viver com você, sou grata por tudo que passamos e iremos passar juntos, sou grata por cada abraço que demos, por cada beijo, por cada beijinho, por cada palavra de amor, por cada afeto, por todas as idas a sua casa, por cada presente, por cada conselho. Sabe meu bem, se eu tivesse outras milhões de vidas, eu escolheria viver com você em todas elas, eu não sei o que seria de mim sem você, não sei o que aconteceria com a minha vida se eu não aceitasse viver ela com você, e também não sei o que vai acontecer se eu não tiver você no meu futuro. Você com certeza é a melhor pessoa que eu já amei e amo e sei que vou amar pra sempre, por toda a eternidade, a eternidade que eu almejo tanto pra ter com você. Sempre sonhei em ter uma vida amorosa igual às das princesas da Disney, depois de uma decepção amorosa, achei que todos os meus sentimentos tinham se encerrado ali, achei que nunca conseguiria encontrar alguém que me fizesse me sentir feliz, amada e realmente como uma princesa, mas você, você meu amor, me mostrou o que é amar, me iluminou, você acendeu a luz que tinha se apagado em mim, você simplesmente conseguiu deixar seu lugar em meu coração, e que tenha a certeza de que sempre, sempre vai ter um lugar pra você em meu coração. Obrigada por me mostrar o que é o amor de verdade, por me mostrar que as coisas nem sempre são fáceis e que eu sou capaz de suportar tudo, que a gente é capaz de suportar todas as coisas, que eu sou forte, que nós somos fortes. Sou imensamente agradecida por você me mostrar que viver é algo magnífico, que a vida tem sentido, tem valor, principalmente se ela for vivida com você. Amo você, sempre vou te amar, amar você é um sentimento que não é possível descrever de tão forte que é, nunca senti algo assim por ninguém e com certeza não vou, e nem quero. Em todos esses anos, eu pude ver que eu sou importante pra alguém, que alguém faz questão de me ter. No dia que você me pediu em namoro, eu voltei pra casa muito feliz, tendo a certeza de que aquele foi o melhor dia da minha vida. Vida, você é minha metade, meu eu em outra versão que com certeza eu me sentiria perdida se eu não te tivesse, se eu não tivesse encontrado minha metade. Minha estrelinha, minha amada estrelinha, eu te desejo tanto, quero viver, te ter por bilhões de anos, bilhões, trilhões de anos, te ter pra sempre, sem ter o "até que a morte nos separe", a morte não é o fim, e eu não quero que tenhamos um fim nisso. Nossa história começou exatamente depois de 11:40/11:45 da manhã, foi o dia mais engraçado e mais feliz de todos os que já vivi, até chegar o dia do nosso primeiro beijo, no caso, beijinho kk, achei muito estranho, até fugi com vergonha, mas pode ter certeza de que quando cheguei em casa, fiquei muito feliz. Até que chegou nosso primeiro mês, você me deu um cordão, cordão esse que não saia do meu pescoço, e que ainda tenho até hoje, nunca irei me desfazer dele. E com isso foi passando os meses, 2,3,4 até que chegou no nosso primeiro ano, na pandemia que foi algo que mostrou o quão somos fortes e capazes de aguentar qualquer coisa, ficamos um tempão sem nos ver, 1 ano praticamente, e mostrou que nosso amor nunca diminuiu, quebramos o pensamento de Platão kkkk. O nosso segundo ano, foi um dia especial, fui pra sua casa, não me recordo se foi a primeira vez, mas eu quis fazer ele especial, no mesmo ano fomos ao cinema juntos pela primeira vez, olha que incrível!! algo que seria realmente impossível, nós conseguimos ser e fazer possível. Nosso terceiro ano recebi um presente incrível, que me fez me sentir uma pessoa muito importante. Algo que eu realmente preciso que seja validado. Passei por diversos problemas de me sentir insuficiente, sem valor, inútil e em todos eles você me transformou, me mostrou que eu sou muito mais do que as outras pessoas pensam. Tem uma frase na nossa música que eu gosto muito, que diz: "I wold never fall in love again until I found her; I said I wold never fall unless its you, Ive fallen to." que diz: eu nunca me apaixonaria novamente até encontrar ela; Eu disse que nunca me apaixonaria a menos que eu me apaixonasse por você, e essa frase tá na nossa bio do Instagram, eu me identifico muito com isso, pq sei que se nós estamos juntos é pq temos um propósito, e quero e espero que esse propósito seja maravilhoso. Meu querido ursinho do melhor abraço, obrigada por ser quem você é, obrigada por nunca, nunca desistir de mim, por favor nunca desista. Meu diamante precioso, você é a pessoa mais preciosa que eu conheço. Minha flor, minha flor mais cheirosa de todo o mundo, de todo universo, meu docinho, meu coração (mi corazon). Quando a gente terminou, mesmo que tenha sido por 2 dias, senti um vazio enorme dentro de mim, com certeza é algo que não desejo a ninguém, te perder é meu maior pesadelo, e eu não quero que ocorra isso nunca, nunca mais. Quero viver com você, casar com você, contar nossas histórias pros nossos filhos, quero ter um lar com você, quero realizar todos os meus sonhos com você, meu futuro é com você e eu não consigo me imaginar sem você. Obrigada por viver comigo nesses 4 anos, obrigada por me escolher, obrigada por tudo. Que nossa história até decorrer dos 5 anos seja incrível, que nada possa nos impedir de ficarmos juntos. Que nosso dia seja incrível, embora a gente não esteja junto e também por ser 1 dia antes da semana de provas, mas eu desejo coisas boas. Eu te amo demais meu amor, minha vida, minha estrela, meu tudo. Beijos 💖🫂💋'
+            escolha.innerHTML = 'Trevo'
+            trevo.style.scale = '1.1'
+            trevo.style.background = '#008000'
+            trevo.style.boxShadow = '0 2px black'
+            document.body.style.backgroundImage = 'url("../imagens/papel-trevo.jpg")'
+            document.body.style.backgroundSize = 'cover'
+            barras.style.background = '#50eb50'
+            cabeca.style.background = '#79ff79'
+            barras.style.borderRight = 'solid 2px #238b23'
+            barras.style.borderBottom = 'solid 2px #238b23'
+            cabeca.style.borderBottom = 'solid 2px #238b23'
+        }
+
+        function temaestrela() {
+            resetarBotoes();
+            let cabeca = document.getElementById('cabeca')
+            let texto = document.getElementById('texto')
+            let escolha = document.getElementById('escolha')
+            let barras = document.getElementById('barrinha')
+            let estrela = document.getElementById('star')
+            escolha.innerHTML = 'Estrela'
+            texto.innerHTML = 'OIII MINHA PRINCESINHA MINHA NENEEM!!! Eu n consigo nem acreditar q isso chegou em uma fase tão big big big big, amor, a gente chegou nos 4 anos, tipo, 4 ANOS, 4 anos é quase metade de uma década, e tipo, é muito!!!!!!!!! serio amor, eu n consigo descrever o quanto eu to feliz pela gente, a gente é muito incrivel, chegamos em uma fase tao longa, mesmo com tantas coisas horríveis e ruins, eu sinto que sempre valeu a pena eu insistir tanto nisso, nunca ter desistido de você, e nunca deixar vc desistir de si mesma..  eu sei muito que você vai evoluir muito, e q vc vai ser uma grande pessoa, uma grande mulher. E sim, eu confio muito nisso, pq eu te acho uma menina incrível, eu tenho muita esperança deq vc vai ser feliz, com, ou sem mim. Meu bem, minha vida com você foi incrível, ver minha adolescência completa com você, ver q isso me ajudou a amadurecer, ver q isso me ensinou bastante coisa, só me faz melhor, assim como tambem me faz melhor quando eu estou do seu lado, sentindo seu cheiro, quando estamos pertos um do outro, é muito bom sentir essas sensações, e também aquelas la q vc sabe em gostosa!! Amor, continuando, te ver crescendo me faz sentir muito orgulho, eu te vi mudando muita coisa, eu te vi crescendo mentalmente e eu sinto muito orgulho por isso, até pq eu ensinei tudo, obviamente vc continua precisando melhorar, mas tudo q vc melhorou, me faz me sentir orgulho demais bebê. Minha loirinha, eu n sei como eu posso te explicar o quanto vc é especial pra mim, vc pode achar mil coisas, mas eu odeio quando vc fala q meu amor por você é inexistente, e não meu amor, não é, a gente pode passar por muitas fases, mas eu sei, e sei muito o quanto q vc é especial na minha vida e eu n posso deixar de te amar, e se um dia isso acontecer, saiba que eu vou ser muito triste. É meu trevo, sinto que a cada dia que passa vc faz mais parte de mim, tudo que a gente faz fica na minha mente, e embora eu nao demonstre, eu me sinto feliz tendo você comigo, pq é como se algo me completasse, e é uma sensação muito boa minha gata. Eu so tenho a te agradecer por passar tanto tempo ao meu lado, tanto tempo juntos com tanto amor, e mesmo com varias coisas que impeçam da gente continuar, a gente continua, e é um exemplo de algo que possa se seguir, mesmo que tudo dê errado, não podemos desistir, e isso é algo que o nosso relacionamento nos ensinou, e que com certeza a gente deve levar pra vida inteira, o ensinamento deq nunca devemos desistir mesmo se tiver problemas. Vamos levar isso pra nossa vida amor, mesmo se a gente se separar um dia, algo que eu não espero, mas se acontecer, lembre disso. Vida, mesmo eu sendo uma pessoa esquecidinha, eu consigo lembrar de uns momentos nossos, até quando te pedi em namoro, e foi la que essa fase na minha vida comecou, foi la que eu senti que algo estivesse me completando, mas nao como o amor de Platão, assim como eu disse sexta, que eu senti meu amor crescer mais ainda, e eu não quero que deixe de crescer nunca, até pq eu quero sentir a sensação de ter você comigo sempre, eu ainda quero ser livre com vc. Meu suquinho, e enquanto as estações mudarem, eu prometo estar com você, eu prometo que eu não vou deixar de estar com você, eu irei continuar te apoiando e tentando te fazer feliz, mesmo te deixando estressada na maioria das vezes, e então, vc tbm me prometeria isso? Até pq, se sentir o nosso término foi tão doloroso, imagina sentir vc longe de mim. Muito obrigado por fazer parte da minha vida amor, eu n sei quantas vezes eu ja me senti feliz e ja abri vários sorrisos apenas vendo uma coisa simples, como a foto de perfil do nosso server kkkkkk. Muito obrigado por se abrir a compartilhar sua vida comigo, mesmo eu sendo uma pessoa horrivel as vezes, mesmo errando muito, obrigado por nao desistir de mim. E é assim meu amor, nunca vou desistir fácil da gente, assim como meus amigos disseram, que eu tenho muitos motivos pra terminar, mas eu não deixo você, e nem eu desistirmos. Muito obrigado por todos os beijos, abraço, momentos rs e tudo mais meu amor, você me faz uma pessoa incrível. Eu te amo demais, meu brilhinho de pérola 💕🫂💕🫂'
+            estrela.style.scale = '1.1'
+            document.body.style.backgroundImage = 'url("../imagens/papel-estrela.jpg")'
+            document.body.style.backgroundSize = 'cover'
+            estrela.style.background = '#e5e619'
+            estrela.style.boxShadow = '0 2px black'
+            barras.style.background = '#ebeb50'
+            cabeca.style.background = '#ffff63'
+            barras.style.borderRight = 'solid 2px #cece4b'
+            barras.style.borderBottom = 'solid 2px #cece4b'
+            cabeca.style.borderBottom = 'solid 2px #cece4b'
+        }
+        function resetarBotoes() {
+            const botoes = document.querySelectorAll('button');
+            botoes.forEach(botao => {
+                botao.style.scale = '1';
+                botao.style.background = '#ffffff00';
+                botao.style.boxShadow = 'none'
+            });
+
+        }
+
+
+    </script>
+</body>
+
+</html>

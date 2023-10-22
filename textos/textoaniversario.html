@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Estrevo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @media(max-width: 700px) {
+            body {
+                background-image: url('../imagens/papel-estrela.jpg');
+                background-size: cover;
+                height: 100vh;
+                padding: 0;
+                margin: 0;
+            }
+
+            #cabeca {
+                background-color: #ffff63;
+                display: flex;
+                padding: 0 5px 0 5px;
+                align-items: center;
+                justify-content: space-around;
+                border-bottom: solid 2px #d3d328;
+            }
+
+            #barras {
+                background-color: #ffffff00;
+                border: none;
+            }
+
+            #star,
+            #cloves {
+                border-radius: 50px;
+                border: solid 1px black;
+                background-color: rgba(255, 255, 255, 0);
+            }
+
+            main {
+                text-align: center;
+                padding: 10px;
+            }
+
+            video {
+                border: solid 2px black;
+                border-radius: 10px;
+            }
+
+            img {
+                width: 150px;
+                height: 150px;
+            }
+
+            section {
+                text-align: center;
+                display: flex;
+                align-items: center;
+                width: 300px;
+
+                padding: 0 10px 0 10px;
+            }
+
+            .bobinicio {
+                border: solid 1px black;
+                border-radius: 10px;
+                padding: 5px;
+                height: 100px;
+                overflow-y: auto;
+            }
+
+            #barrinha {
+                position: absolute;
+                left: -135px;
+                padding: 0 20px 20px 0;
+                background-color: #ebeb50;
+                width: 110px;
+                border-right: solid 2px #cece4b;
+                border-bottom: solid 2px #cece4b;
+                box-shadow: 1px 1px 4px black;
+                transition: left 0.3s;
+            }
+
+            ul {
+                position: relative;
+                right: 10px;
+            }
+
+            li {
+                margin-top: 10px;
+            }
+
+            #star {
+                background-color: #e5e619;
+                box-shadow: 0 2px black;
+                scale: 1.1;
+            }
+
+            details {
+                position: relative;
+                left: 10px;
+            }
+
+            a {
+                color: black;
+                outline: none;
+                border: none;
+            }
+            main h1 {
+                -webkit-animation: scale-up-top 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.2s backwards;
+                animation: scale-up-top 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.2s backwards;
+            }
+            @-webkit-keyframes scale-up-top{0%{-webkit-transform:scale(.5);transform:scale(.5);-webkit-transform-origin:50% 0;transform-origin:50% 0}100%{-webkit-transform:scale(1);transform:scale(1);-webkit-transform-origin:50% 0;transform-origin:50% 0}}@keyframes scale-up-top{0%{-webkit-transform:scale(.5);transform:scale(.5);-webkit-transform-origin:50% 0;transform-origin:50% 0}100%{-webkit-transform:scale(1);transform:scale(1);-webkit-transform-origin:50% 0;transform-origin:50% 0}}
+        }
+    </style>
+</head>
+
+<body>
+    <header id="cabeca">
+        <button id="barras" onclick="barras()"><i class="fa-solid fa-bars"></i></button>
+
+        <h1>Estrevo</h1>
+        <p>Escolha um tema:</p>
+        <button id="star" onclick="temaestrela()"><i class="fa-solid fa-star"></i></button>
+        <button id="cloves" onclick="tematrevo()"><i class="fa-solid fa-clover"></i></button>
+    </header>
+    <nav id="barrinha">
+        <ul>
+            <li><a href="../index.html">Início</a></li>
+            <li type="none"><a href="../fotos.html">Fotos</a></li>
+        </ul>
+        <details>
+            <summary>Textos</summary>
+            <ul>
+                <li><a href="textoaniversario.html">Textos aniversários.</a></li>
+                <li><a href="textos1ano.html">Textos 1 ano</a></li>
+                <li><a href="textos2anos.html">Textos 2 anos</a></li>
+                <li><a href="textos3anos.html">Textos 3 anos</a></li>
+                <li><a href="textos4anos.html">Textos 4 anos</a></li>
+            </ul>
+        </details>
+
+    </nav>
+    <main>
+        <h1>Textos aniversários</h1>
+        <h2 id="escolha">Estrela</h2>
+        <h3  id="quinze">Texto 13 anos</h3>
+        <p id="texto20">hj vc completa mais um ano de vida né minha neném?... Quero te dizer que vc foi uma da melhores pessoas que eu já conheci e que se eu te perdesse eu ia ficar muito triste, eu quero te pedir que vc continue me ajudando em tudo e continue sendo essa pessoa maravilhosa que você é e eu nunca vou me arrepender de ter te conhecido Feliz aniversárioo. 🥳 🥳 🥳 Acordar com você me desejando um ótimo dia e ir dormir ouvindo você dizer que me ama é tudo o que eu preciso para enfrentar esse mundão com força, você é essencial na minha vida. Te amo muito e feliz aniversário meu amor 🥳❤️</p>
+        <h3 id="dezesseis">Texto 14 anos</h3>
+        <p id="texto21">hj né, aniversário da minha neném linda. Desde quando eu comecei a falar e sentir um amor imenso por ti, vi o quão tu era uma pessoa especial e perfeita. Hj eu quero te desejar um feliz aniversário, que vc continue sendo essa pessoa maravilhosa, q me ajuda as vezes ne pq nn sabe mais, uma pessoa perfeita e tals e tals. Já é o 2 aniversário teu q eu tô ctg kkkk e eu quero passar os próximos tbm, q vai ser mttt legal né✋. Saiba q eu vou te amar por MUITO tempo e não vou te deixar, assim como eu prometi né. Além de desejar coisas, eu tenho q agradecer né; muito obrigado por ta cmg nessa ate hj, obg por me ajudar as vezes, obg por ter me aceitado na tua vida e por me amar tbm.. <br>
+            Agora, vou falar qualidades e defeitos seus 🤝😎  <br>
+            <br>
+            qualidades fodas: <br>
+            <br>
+            Perfeita <br>
+            gotosa<br>
+            Maravilhosa<br>
+            Linda<br>
+            Amor da minha vida (Sim, ser o amor da minha vida é uma qualidade)<br>
+            Super legal né<br>
+            Tem um abraço foda<br>
+            Sorriso lindo<br>
+            Princesa<br>
+            Uma deusa <br>
+            Cheirosa<br>
+            e outros 👍😎 <br>
+            <br>
+            Defeitos: <br>
+            <br>
+            Nn gosta de sushi 😡<br>
+            Nn enxerga q tem todas essas qualidades 😡<br>
+            <br>
+            <br>
+            Bom, feliz aniversário né princesa. 
+            Eu te amo muito, amo muito msm 💕💕💕💕💕</p>
+            <h3 id="dezessete">Texto 15</h3>
+            <p id="texto22">FELIZ ANIVERSARIO MINHA NENEEEEEEEEEEEEEEEM MEU DEUS, vida parabens, você é uma oessoa incrivel incrivel que ta fazendo QUINZE ANINHOS MEU DEUS eu to acompanhando a adolescência da minha princesa, quinze anos ne amor, terceiro aniversario que eu passo contigo, e quero passar mt mais, pq eu te amo muito muito muito muito muito mesmo, e tipo, 3 aniversários juntos amor, eu to literalmente acompanhando tua adolescência, e vou acompanhar todas todas viu. Amor da minha vida, por fsvor continue sendo essa pessoa invrivel e perfeita e gostosa que você é, pq plmds que menina incrivel perfeita e gostosa, eu te amo muito, amo esse seu jeito perfeito, vc é uma pessoa tao especial q eu choro so de pensar, você é minha vida, por favor continue sendo em todas as fases de sua e da minha vida inteira. Meu bem, eu desejo tudo de bom pra você, que você alcance tudo que você quer, tudo tudo tudo msm, e se vc ficar feliz as coisas que vc conquista, eu tbm vou ficar, ate se um dia eu morra, eu vou acompanhar toda a trajetória de sua vida e ver você conquistando tudo que quer. Você é uma pessoa perfeita, continue indo atras doq quer, vc tem potencial, vc é uma pessoa incrivel meu bem, acredite. Bom, eu te desejo saúde, que vc esqueça quaisquer pensamento ruim que sua mente insiste em pensar, que vc consiga passar por qualquer problema que aparecer, eu te desejo tudo de bom ok. Eita em vida, ta ficando velhinha, jaja chega os 18 ai, 3 aninhos. Olha meu bem, você é mt importante pra mim ta, eu quero viver com você pelo resto da minha vida, eu realmente te acho minha mulher, a minha vida, minha princesa, meu trevozinho de 4 folha, sério, vc é mt importante p mim, eu nunca nuncs nunca quero deixar vc ir embora, nunca vou pensar em te deixar. Minha princesa eu te amo muito, feliz aniversário, mt obg por tudo e me ajude a passar por todos os seus aniversarios daq p frente viu. EU TE AMO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MINHA PRINCESA MINHA GOSTOSA MINHA VIDA MINHA LINDA VIU AMOR EU TE AMO DEMAISSSSSSSSS BEIJO BEIJO BEIJO BEIJO 💕💕💕💕💕🫂🫂🫂🫂🫂🫂🫂🫂🫂🫂💕💕💕💕💕💕💕💕💕🫂🫂🫂🫂🫂💕😏💕💕🫂💕🫂💕💕💕🫂🫂🫂💕💕💕💕💕💕💕💕💕💕💕💕💕🫂💕💕💕💕💕💕💕🫂💕🫂💕🫂💕🫂💕🫂💕🫂💕🫂💕💕💕💕💕💕💕🫂🫂🫂🫂🫂💕💕💓💕💓💕💓🫂💓💕💖💕💖🫂💖🫂💓💕💓🫂💖🫂💖💕💖💕💓💓🫂❤💕❤🫂❤💕❤💕❤💕❤💕❤💕❤💕❤💕❤🫂😈💕❤💕❤💕❤</p>
+            <h3 id="dezoito">Texto 16</h3>
+        <p id="texto23">
+            AMOR!!!! meu deus finalmente!! finalmente chegou o momento que eu esperei tanto, a meta que eu falo desde o começo, e que bom que você ainda ta comigo mesmo depois de tudo que passamos. Passamos por 193837293828848 de coisas, e mesmo assim nao desistiu de mim, mesmo assim nao desisti da minha meta, que finalmente se cumpriu depois de 3 anossssssss!!! serio meu bem, obrigado de verdade por nao ter desistido de tudo, eu te agradeço tambem por tudo que passamos nesse tempo todo que eu esperei minha meta. E chegando aqui, eu digo pra você que você é a pessoa mais incrível que eu ja conheci, eu te peço muito que você continue sendo quem é, uma menina incrivel, linda perfeita maravilhosa gostosa e tudo de bom. Sem duvidas você é a melhor coisa q ja aconteceu pra mim, incrivel a forma em q te vi e me encantei kkkkkkkkkkk foi loko, e mais incrível é a forma em q a gente comecou a se gostar e hoje estamos aqui. Eu quero te desejar muita saúde ne, q vc continue sendo uma pessoa muito incrível. O mais loko disso tudo é q vai ser o primeiro  q a gente vai passar "junto",  nao tao junto pq a gente so cai se ver no outro dia, mas tudo bem!!! PELO MENOS VOU TE VER!!!!! Pela primeira vez isso vai acontecer, espero q aconteça dnv, a vc possa me ver no meu niver tbm. Pse vida, continue sendo minha princesa, minha gostosa, meu suco de maracujá, meu trevo, minha gata, minha linda, minha maravilhosa, minha mulher, SEJA MINHA!!!!! Agora que finalmente chegou, esperamos que tudo de certo. Vida, eu te amo muito, amo sua musica que fez pra mim, amo sua boca seis olhos seu nariz seu tudo!!! TUDO EM VC É LINDO! VOCE É MINHA MULHER MINHA MULHER PERFEITA, e eu amo cada detalhe seu, continue assim, uma mulher elegante poderosa gostosa 😘. E é isso vida, so de pensar que chegou finalmente oq tanto esperei eu fico totalmente feliz, fico de boca aberta que eu esperei tanto tempo pra isso e que passou muito tempo. Foi simplesmente incrível tudo q a gente passou e eu amei tudo isso,..... obrigado meu amor, você é incrivel e eu te amo muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito muito meu trevo bj bj bj bj bj bj bj bj bj bj bj bj bj bj bj bj bj bj bj bj bj bj bj bj bj bj bj bj bj bj bj bj bj bj bj bj bj bj bj bj bj bj bj bj bj bj bj ❤️🫂❤️🫂❤️🫂❤️🫂❤️🫂❤️💕❤️🫂❤️💕❤️💕❤️💕❤️🫂❤️💕❤️💕❤️💕❤️💕❤️💕❤️💕❤️💕❤️💕❤️💕❤️💕❤️💕❤️💕❤️💕❤️❤️🫂❤️🫂❤️🫂❤️🫂🫂🫂🫂🫂🫂🫂🫂🫂🫂🫂❤️🫂❤️🫂❤️🫂❤️🫂❤️❤️🫂🫂❤️❤️💕❤️💕❤️🫂❤️🫂🫂❤️🫂❤️🫂❤️❤️🫂🫂❤️🫂❤️🫂❤️🫂❤️🫂❤️🫂❤️🫂❤️🫂❤️🫂❤️🫂❤️🫂❤️🫂❤️🫂❤️🫂❤️🫂❤️🫂❤️❤️🫂❤️🫂❤️🫂❤️🫂❤️🫂❤️🫂❤️🫂❤️💕🫂💕🫂💕🫂🫂💕🫂💕
+        </p>
+
+
+    </main>
+
+    <footer>
+
+    </footer>
+    <script>
+        function barras() {
+            let barra = document.getElementById('barrinha');
+            let barraatual = parseInt(barra.style.left, 10);
+            if (barraatual === 0) {
+                barra.style.left = '-135px';
+            } else {
+                barra.style.left = '0px';
+            }
+        }
+        function tematrevo() {
+            resetarBotoes();
+            let texto = document.getElementById('texto20')
+            let texto21 = document.getElementById('texto21')
+            let texto22 = document.getElementById('texto22')
+            let texto23 = document.getElementById('texto23')
+            let quinze = document.getElementById('quinze')
+            let dezesseis = document.getElementById('dezesseis')
+            let dezessete = document.getElementById('dezessete')
+            let dezoito = document.getElementById('dezoito')
+            let escolha = document.getElementById('escolha')
+            let cabeca = document.getElementById('cabeca')
+            let barras = document.getElementById('barrinha')
+            let trevo = document.getElementById('cloves')
+            quinze.innerHTML = 'Texto 15 anos'
+            dezesseis.innerHTML = 'Texto 16 anos'
+            dezessete.innerHTML = 'Texto 17 anos'
+            dezoito.innerHTML = 'Texto 18 anos'
+            texto20.innerHTML = 'Então, chegou o dia né kkkk. Parabéns meu amor, que você possa continuar sendo essa pessoa incrível, legal, companheiro, carinhoso, maravilhoso e tals.. Você foi a melhor coisa que aconteceu na minha vida. Obrigada por estar comigo sempre e tbm por nunca desistir de mim. Você é a pessoa mais importante pra mim e eu vou tá aqui sempre, msm q as vzs eu seja ignorante e chata e tals.. Você é o melhor namorado do mundo e o melhor presente que eu pude ter kkk. Ah sei la, nunca imaginei q alguém como vc entraria na minha vida de um jeito tão engraçado kkkj. Ah, eu te amo de um jeito q sei la, qualquer coisa que tu faz, meu coração dispara kkkkk ou sla. Enfim, feliz aniversário né e que vc possa aproveitar bastante seu dia e desejo q vc tenha mts felicidades de hj e sempre. Eu te amo dmsssssssss 💖💖💖💖'
+            texto21.innerHTML = 'uau feliz aniversário estrelinha mkjkkkkkk. Tá, enfim, quando eu te conheci eu nem esperava que tu ia se tornar uma pessoa tão importante pra mim e olha só kkkkkkk tô passando mais um aniversário contigo e nossa é mt incrível pq eu n esperava que eu ia passar mais um aniversário contigo, e isso é mt emocionante kkkkkkj, e eu tbm espero passar os próximos junto ctg tbm né. Então, quero te agradecer por não ter desistido de mim aindakkkkk, por continuar me amando e por me ajudar e me fazer feliz as vezes. Que você possa continuar sendo essa pessoa incrivelmente incrível, e que nunca desista de mim, mesmo que as vezes seja difícil kkjk. Espero que saiba que eu vou sempre estar aqui e que eu nunca, nunca vou te deixar.tá agr vou dizer as coisas que eu mais gosto em você, pq sim. abraço, tenho nem oq falar né, é mt bom kksorriso, curiosidade: toda vez q eu to tendo um dia difícil/triste q é sempre, msm q o motivo seja a gente ter brigado eu penso em ti sorrindo e eu começo a sorrir tbm kkkk tudo. Bom esse com certeza n foi um dos melhores textos que eu já fiz eu acho, até pq meus sentimentos por ti aumentaram bastante e eu não sei como descrever, mas é isso. Eu te amo muito, muito, demais, imensamente, extremamente, altamente demais, muito mesmo tá. Obrigada por tudo e feliz aniversário lindo bejo 🫂💖.'
+            texto22.innerHTML = 'feliz aniversário meu diamantezinho!!! Nossa, tu nem sabe o quão eu sou grata por passar mais um ano de vida com você, é algo gratificante saber que eu pude acompanhar um pouco da sua adolescência, me emociono toda vez que eu lembro disso. Então mi corazon, quero te desejar uma vida feliz, te desejar saúde, alegria mt alegria, muitas felicidades. Peço para que você continue sendo essa pessoa muito muito incrível, uma pessoa especial, carinhoso, atencioso, cuidadoso e peço para que você nunca se esqueça de quem você é e nunca desista de mim. Saiba que eu sempre vou estar aqui pra você, namorando, casada ou não, eu sempre vou estar aqui. Meu bem, eu nunca vou esquecer de você, você é uma das pessoas mais importantes da minha vida todinha e espero nunca nunquinha me arrepender de ter conhecido você. Eu amo você, amo mais que tudo no mundo, tenho um carinho gigantesco por você. Quero te agradecer por sempre estar comigo, por sempre me apoiar nas coisas que seu coração deseja me apoiar; Eu agradeço demais por ter tido a grande sorte de ter você em minha vida, e, eu quero muito muito viver o resto dela com você. Eu sou o trevinho mais sortudo do mundo por ter conquistado uma estrela muito muito muito muito muito muito brilhante pra iluminar minha vida, tenho sorte de ter o diamante mais precioso de todo o universo, tenho sorte também de ter o ursinho com o abraço mais confortável de todos, e também por poder ter a flor mais cheirosa de todas as outras. Amor, saiba que meu coração, meu amor, meu carinho, minha atenção, meu consolo e afeto são todos seus e direcionados a você. Amo seus olhos, amo sua boquinha, amo seu rostinho por inteiro e também amo seu corpitio, mas o principal é que eu amo muito seu sorriso, pois ele é um dos motivos principais que me faz ficar aqui com você. Amo sua risada principalmente se o motivo dela for eu, pq n existe nada mais incrível e magnífico saber que o motivo de você ser feliz, é por minha causa. Feliz aniversário vida, eu te amo mucho 💖'
+            texto23.innerHTML = 'feliz vida meu amor! Agora meu bebezinho já é grandinho adulto, a 4 anos atrás eu tava te conhecendo e agora você está se tornando uma pessoa incrível, que eu tenho certeza que vai conseguir conquistar tudo o que deseja. Quero te desejar coisas boas e maravilhosas pra sua vida, que você possa sempre estar ao meu lado, de qualquer maneira, que você sempre possa continuar sendo luz em minha vida. É um prazer gigantesco compartilhar minha vida com você. Sou grata por te ter comigo, mesmo em meio às dificuldades, você sempre está comigo tentando nos erguer. Que todos os seus sonhos possam se realizar, e que você também nunca desista deles, que sua vida seja incrível com ou sem mim, mas vai ser melhor comigo né kk. É muito gratificante saber que eu pude acompanhar um pouco de sua adolescência, do seu amadurecimento, e da pessoa incrivelmente incrível que você está se tornando. Que essa sua nova etapa da sua vida seja repleta de alegrias e nunca se esqueça de quem você é. Sou muito sortuda por te ter, nunca deixe de ser quem você é, uma pessoa carinhosa, atencioso, prestativo, e que na maioria das vezes é o único que se importa comigo. Você é tão especial pra mim, que mesmo se eu te olhasse milhões e milhões de vezes, eu me apaixonaria por mais milhões e milhões de vezes por você. Por favor meu bem, nunca desista de mim, nunca desista de nós, eu te amo e preciso de você. Você é como um oxigênio pra mim, e eu não quero nunca saber a sensação de te deixar ir embora. Amo sua existência na minha vida, sem você, eu não sei o que seria de mim, e com isso, amo você com todas as forças que existe em mim, com todo o meu coração, com toda a minha alma. Você é único pra mim, e as pessoas ao seu redor tem também muita sorte de te ter viu, nunca esqueça disso. Sou grata por ter minha estrelinha, a que mais brilha, a que mais se destaca, a que me ilumina, e também, a que me ama, e eu vou amar você por toda a minha vida, até meu último suspiro, e melhor, eternamente. São essas pequenas coisas que eu queria te dizer, nunca se esqueça disso amor, nunca se esqueça também que eu sempre vou estar aqui por você e com você. Que hoje, seu dia seja maravilhoso. Eu te amo muito minha estrela. Feliz aniversário!!! '
+            escolha.innerHTML = 'Trevo'
+            trevo.style.scale = '1.1'
+            trevo.style.background = '#008000'
+            trevo.style.boxShadow = '0 2px black'
+            document.body.style.backgroundImage = 'url("../imagens/papel-trevo.jpg")'
+            document.body.style.backgroundSize = 'cover'
+            barras.style.background = '#50eb50'
+            cabeca.style.background = '#79ff79'
+            barras.style.borderRight = 'solid 2px #238b23'
+            barras.style.borderBottom = 'solid 2px #238b23'
+            cabeca.style.borderBottom = 'solid 2px #238b23'
+        }
+
+        function temaestrela() {
+            resetarBotoes();
+            let cabeca = document.getElementById('cabeca')
+            let texto = document.getElementById('texto20')
+            let texto21 = document.getElementById('texto21')
+            let quinze = document.getElementById('quinze')
+            let dezesseis = document.getElementById('dezesseis')
+            let dezessete = document.getElementById('dezessete')
+            let dezoito = document.getElementById('dezoito')
+            let texto22 = document.getElementById('texto22')
+            let texto23 = document.getElementById('texto23')
+            let escolha = document.getElementById('escolha')
+            let barras = document.getElementById('barrinha')
+            let estrela = document.getElementById('star')
+            quinze.innerHTML = 'Texto 13 anos'
+            dezesseis.innerHTML = 'Texto 14 anos'
+            dezessete.innerHTML = 'Texto 15 anos'
+            dezoito.innerHTML = 'Texto 16 anos'
+            escolha.innerHTML = 'Estrela'
+            texto.innerHTML = 'hj vc completa mais um ano de vida né minha neném?... Quero te dizer que vc foi uma da melhores pessoas que eu já conheci e que se eu te perdesse eu ia ficar muito triste, eu quero te pedir que vc continue me ajudando em tudo e continue sendo essa pessoa maravilhosa que você é e eu nunca vou me arrepender de ter te conhecido Feliz aniversárioo. 🥳 🥳 🥳 Acordar com você me desejando um ótimo dia e ir dormir ouvindo você dizer que me ama é tudo o que eu preciso para enfrentar esse mundão com força, você é essencial na minha vida. Te amo muito e feliz aniversário meu amor 🥳❤️'
+            texto21.innerHTML = `hj né, aniversário da minha neném linda. Desde quando eu comecei a falar e sentir um amor imenso por ti, vi o quão tu era uma pessoa especial e perfeita. Hj eu quero te desejar um feliz aniversário, que vc continue sendo essa pessoa maravilhosa, q me ajuda as vezes ne pq nn sabe mais, uma pessoa perfeita e tals e tals. Já é o 2 aniversário teu q eu tô ctg kkkk e eu quero passar os próximos tbm, q vai ser mttt legal né✋. Saiba q eu vou te amar por MUITO tempo e não vou te deixar, assim como eu prometi né. Além de desejar coisas, eu tenho q agradecer né; muito obrigado por ta cmg nessa ate hj, obg por me ajudar as vezes, obg por ter me aceitado na tua vida e por me amar tbm.. <br>
+            Agora, vou falar qualidades e defeitos seus 🤝😎  <br>
+            <br>
+            qualidades fodas: <br>
+            <br>
+            Perfeita <br>
+            gotosa<br>
+            Maravilhosa<br>
+            Linda<br>
+            Amor da minha vida (Sim, ser o amor da minha vida é uma qualidade)<br>
+            Super legal né<br>
+            Tem um abraço foda<br>
+            Sorriso lindo<br>
+            Princesa<br>
+            Uma deusa <br>
+            Cheirosa<br>
+            e outros 👍😎 <br>
+            <br>
+            Defeitos: <br>
+            <br>
+            Nn gosta de sushi 😡<br>
+            Nn enxerga q tem todas essas qualidades 😡<br>
+            <br>
+            <br>
+            Bom, feliz aniversário né princesa. 
+            Eu te amo muito, amo muito msm 💕💕💕💕💕`
+            texto22.innerHTML = 'FELIZ ANIVERSARIO MINHA NENEEEEEEEEEEEEEEEM MEU DEUS, vida parabens, você é uma oessoa incrivel incrivel que ta fazendo QUINZE ANINHOS MEU DEUS eu to acompanhando a adolescência da minha princesa, quinze anos ne amor, terceiro aniversario que eu passo contigo, e quero passar mt mais, pq eu te amo muito muito muito muito muito mesmo, e tipo, 3 aniversários juntos amor, eu to literalmente acompanhando tua adolescência, e vou acompanhar todas todas viu. Amor da minha vida, por fsvor continue sendo essa pessoa invrivel e perfeita e gostosa que você é, pq plmds que menina incrivel perfeita e gostosa, eu te amo muito, amo esse seu jeito perfeito, vc é uma pessoa tao especial q eu choro so de pensar, você é minha vida, por favor continue sendo em todas as fases de sua e da minha vida inteira. Meu bem, eu desejo tudo de bom pra você, que você alcance tudo que você quer, tudo tudo tudo msm, e se vc ficar feliz as coisas que vc conquista, eu tbm vou ficar, ate se um dia eu morra, eu vou acompanhar toda a trajetória de sua vida e ver você conquistando tudo que quer. Você é uma pessoa perfeita, continue indo atras doq quer, vc tem potencial, vc é uma pessoa incrivel meu bem, acredite. Bom, eu te desejo saúde, que vc esqueça quaisquer pensamento ruim que sua mente insiste em pensar, que vc consiga passar por qualquer problema que aparecer, eu te desejo tudo de bom ok. Eita em vida, ta ficando velhinha, jaja chega os 18 ai, 3 aninhos. Olha meu bem, você é mt importante pra mim ta, eu quero viver com você pelo resto da minha vida, eu realmente te acho minha mulher, a minha vida, minha princesa, meu trevozinho de 4 folha, sério, vc é mt importante p mim, eu nunca nuncs nunca quero deixar vc ir embora, nunca vou pensar em te deixar. Minha princesa eu te amo muito, feliz aniversário, mt obg por tudo e me ajude a passar por todos os seus aniversarios daq p frente viu. EU TE AMO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MINHA PRINCESA MINHA GOSTOSA MINHA VIDA MINHA LINDA VIU AMOR EU TE AMO DEMAISSSSSSSSS BEIJO BEIJO BEIJO BEIJO 💕💕💕💕💕🫂🫂🫂🫂🫂🫂🫂🫂🫂🫂💕💕💕💕💕💕💕💕💕🫂🫂🫂🫂🫂💕😏💕💕🫂💕🫂💕💕💕🫂🫂🫂💕💕💕💕💕💕💕💕💕💕💕💕💕🫂💕💕💕💕💕💕💕🫂💕🫂💕🫂💕🫂💕🫂💕🫂💕🫂💕💕💕💕💕💕💕🫂🫂🫂🫂🫂💕💕💓💕💓💕💓🫂💓💕💖💕💖🫂💖🫂💓💕💓🫂💖🫂💖💕💖💕💓💓🫂❤💕❤🫂❤💕❤💕❤💕❤💕❤💕❤💕❤💕❤🫂😈💕❤💕❤💕❤'
+            texto23.innerHTML = 'FELIZ ANIVERSARIO MINHA NENEEEEEEEEEEEEEEEM MEU DEUS, vida parabens, você é uma oessoa incrivel incrivel que ta fazendo QUINZE ANINHOS MEU DEUS eu to acompanhando a adolescência da minha princesa, quinze anos ne amor, terceiro aniversario que eu passo contigo, e quero passar mt mais, pq eu te amo muito muito muito muito muito mesmo, e tipo, 3 aniversários juntos amor, eu to literalmente acompanhando tua adolescência, e vou acompanhar todas todas viu. Amor da minha vida, por fsvor continue sendo essa pessoa invrivel e perfeita e gostosa que você é, pq plmds que menina incrivel perfeita e gostosa, eu te amo muito, amo esse seu jeito perfeito, vc é uma pessoa tao especial q eu choro so de pensar, você é minha vida, por favor continue sendo em todas as fases de sua e da minha vida inteira. Meu bem, eu desejo tudo de bom pra você, que você alcance tudo que você quer, tudo tudo tudo msm, e se vc ficar feliz as coisas que vc conquista, eu tbm vou ficar, ate se um dia eu morra, eu vou acompanhar toda a trajetória de sua vida e ver você conquistando tudo que quer. Você é uma pessoa perfeita, continue indo atras doq quer, vc tem potencial, vc é uma pessoa incrivel meu bem, acredite. Bom, eu te desejo saúde, que vc esqueça quaisquer pensamento ruim que sua mente insiste em pensar, que vc consiga passar por qualquer problema que aparecer, eu te desejo tudo de bom ok. Eita em vida, ta ficando velhinha, jaja chega os 18 ai, 3 aninhos. Olha meu bem, você é mt importante pra mim ta, eu quero viver com você pelo resto da minha vida, eu realmente te acho minha mulher, a minha vida, minha princesa, meu trevozinho de 4 folha, sério, vc é mt importante p mim, eu nunca nuncs nunca quero deixar vc ir embora, nunca vou pensar em te deixar. Minha princesa eu te amo muito, feliz aniversário, mt obg por tudo e me ajude a passar por todos os seus aniversarios daq p frente viu. EU TE AMO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO MINHA PRINCESA MINHA GOSTOSA MINHA VIDA MINHA LINDA VIU AMOR EU TE AMO DEMAISSSSSSSSS BEIJO BEIJO BEIJO BEIJO 💕💕💕💕💕🫂🫂🫂🫂🫂🫂🫂🫂🫂🫂💕💕💕💕💕💕💕💕💕🫂🫂🫂🫂🫂💕😏💕💕🫂💕🫂💕💕💕🫂🫂🫂💕💕💕💕💕💕💕💕💕💕💕💕💕🫂💕💕💕💕💕💕💕🫂💕🫂💕🫂💕🫂💕🫂💕🫂💕🫂💕💕💕💕💕💕💕🫂🫂🫂🫂🫂💕💕💓💕💓💕💓🫂💓💕💖💕💖🫂💖🫂💓💕💓🫂💖🫂💖💕💖💕💓💓🫂❤💕❤🫂❤💕❤💕❤💕❤💕❤💕❤💕❤💕❤🫂😈💕❤💕❤💕❤'
+            estrela.style.scale = '1.1'
+            document.body.style.backgroundImage = 'url("../imagens/papel-estrela.jpg")'
+            document.body.style.backgroundSize = 'cover'
+            estrela.style.background = '#e5e619'
+            estrela.style.boxShadow = '0 2px black'
+            barras.style.background = '#ebeb50'
+            cabeca.style.background = '#ffff63'
+            barras.style.borderRight = 'solid 2px #cece4b'
+            barras.style.borderBottom = 'solid 2px #cece4b'
+            cabeca.style.borderBottom = 'solid 2px #cece4b'
+        }
+        function resetarBotoes() {
+            const botoes = document.querySelectorAll('button');
+            botoes.forEach(botao => {
+                botao.style.scale = '1';
+                botao.style.background = '#ffffff00';
+                botao.style.boxShadow = 'none'
+            });
+
+        }
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Estrevo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @media(max-width: 700px) {
+            body {
+                background-image: url('../imagens/papel-estrela.jpg');
+                background-size: cover;
+                height: 100vh;
+                padding: 0;
+                margin: 0;
+            }
+
+            #cabeca {
+                background-color: #ffff63;
+                display: flex;
+                padding: 0 5px 0 5px;
+                align-items: center;
+                justify-content: space-around;
+                border-bottom: solid 2px #d3d328;
+            }
+
+            #barras {
+                background-color: #ffffff00;
+                border: none;
+            }
+
+            #star,
+            #cloves {
+                border-radius: 50px;
+                border: solid 1px black;
+                background-color: rgba(255, 255, 255, 0);
+            }
+
+            main {
+                text-align: center;
+                padding: 10px;
+            }
+
+            video {
+                border: solid 2px black;
+                border-radius: 10px;
+            }
+
+            img {
+                width: 150px;
+                height: 150px;
+            }
+
+            section {
+                text-align: center;
+                display: flex;
+                align-items: center;
+                width: 300px;
+                
+                padding: 0 10px 0 10px;
+            }
+
+            .bobinicio {
+                border: solid 1px black;
+                border-radius: 10px;
+                padding: 5px;
+                height: 100px;
+                overflow-y: auto;
+            }
+
+            #barrinha {
+                position: absolute;
+                left: -135px;
+                padding: 0 20px 20px 0;
+                background-color: #ebeb50;
+                width: 110px;
+                border-right: solid 2px #cece4b;
+                border-bottom: solid 2px #cece4b;
+                box-shadow: 1px 1px 4px black;
+                transition: left 0.3s;
+            }
+
+            ul {
+                position: relative;
+                right: 10px;
+            }
+
+            li {
+                margin-top: 10px;
+            }
+            #star {
+                background-color: #e5e619;
+                box-shadow: 0 2px black; 
+                scale: 1.1;
+            }
+            details {
+                position: relative;
+                left: 10px;
+            }
+            a {
+                color: black;
+                outline: none;
+                border: none;
+            }
+            main h1 {
+                -webkit-animation: scale-up-top 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.2s backwards;
+                animation: scale-up-top 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.2s backwards;
+            }
+            @-webkit-keyframes scale-up-top{0%{-webkit-transform:scale(.5);transform:scale(.5);-webkit-transform-origin:50% 0;transform-origin:50% 0}100%{-webkit-transform:scale(1);transform:scale(1);-webkit-transform-origin:50% 0;transform-origin:50% 0}}@keyframes scale-up-top{0%{-webkit-transform:scale(.5);transform:scale(.5);-webkit-transform-origin:50% 0;transform-origin:50% 0}100%{-webkit-transform:scale(1);transform:scale(1);-webkit-transform-origin:50% 0;transform-origin:50% 0}}
+        }
+    </style>
+</head>
+
+<body>
+    <header id="cabeca">
+        <button id="barras" onclick="barras()"><i class="fa-solid fa-bars"></i></button>
+
+        <h1>Estrevo</h1>
+        <p>Escolha um tema:</p>
+        <button id="star" onclick="temaestrela()"><i class="fa-solid fa-star"></i></button>
+        <button id="cloves" onclick="tematrevo()"><i class="fa-solid fa-clover"></i></button>
+    </header>
+    <nav id="barrinha">
+        <ul>
+            <li><a href="../index.html">Início</a></li>
+            <li type="none"><a href="../fotos.html">Fotos</a></li>
+        </ul>    
+        <details>
+            <summary>Textos</summary>
+            <ul>
+                <li><a href="textoaniversario.html">Textos aniversários.</a></li>
+                <li><a href="textos1ano.html">Textos 1 ano</a></li>
+                <li><a href="textos2anos.html">Textos 2 anos</a></li>
+                <li><a href="textos3anos.html">Textos 3 anos</a></li>
+                <li><a href="textos4anos.html">Textos 4 anos</a></li>
+            </ul>
+        </details>
+        
+    </nav>
+    <main>
+        <h1>Texto</h1>
+        <h2 id="escolha">Estrela</h2>
+        <p id="texto">Amor, hoje é nosso dia né, eu nn sei nem como eu começo isso kkkkkkk mas sla. É um dia muito especial pra mim, mas seria muito mais se eu tivesse do teu lado, a saudade é tanta q sla, tenho inveja de quem te vê todo dia. A gente passou mt tempo juntos e eu quero q vá muito muito longe mesmo, até pq tu é a pessoa q eu mais amo nesse mundo, que me ajuda quando eu preciso, sempre tá do meu lado pra tudo, e pode ter certeza que eu nunca vou deixar de fazer o mesmo por ti, tu é a pessoa mais incrível desse mundo, eu quero q tu fique comigo por bastante tempo e q nn me deixe pra trás. Pode ter certeza q se um dia eu te perder pode ser um dos dias mais tristes da minha vida, e eu nn quero q isso nn aconteça nunca, até pq tu é mt especial, eu não tenho palavras pra descrever o tanto de coisas que eu sinto por ti, é um amor imenso e eu nn quero deixar de sentir isso. A gente já passou por muita coisa nesses 1 ano, é muito amor envolvido, eu já fiz muita merda, e eu tento até hj não repetir aquelas coisas novamente. As vezes eu imagino tantas coisas, sla, o meu desejo é te encontrar de novo, poder sentir aquele abraço de novo e dizer na tua frente o quão tu é importante pra mim, eu tenho saudade daquele abraço gostoso que a gente dava no intervalo kkkkkkk, quando eu to deitado eu começo a lembrar daquele abraço, daquelas coisas que a gente fazia junto e choro. Neném, eu não quero q isso tudo acabe, tu foi a pessoa mais importante q já apareceu na minha vida, a melhor coisa q aconteceu, e pode ter certeza q eu nunca vou te abandonar, tu é a MINHA Princesa, a mais bela, mais linda, cê é tudo de bom. Mo, eu sempre vou tá aqui pra conversar contigo, te ajudar em tudo que tu precise, te ajudar a superar teus problemas, e tu sabe que eu nunca gosto de te ver triste. Tu mora no meu coração, sempre quando eu vejo tuas fotos eu sinto várias coisa, saudade, vejo como tu é mt linda kkkkkkkk, eu penso nas coisas que a gente fazia, sim essas fotos são especiais. Bebezinha, tu sabe que desde o começo eu gostei de ti, é um amor imenso, eu já gostava de ti antes de a gente se falar kkkkkk, se isso tudo acabasse iria me destruir por completo, sabia? Tu é a única pessoa q me faz continuar aq, e lembra da minha meta? Pse, não chego nem na metade, mas eu quero cumprir ela e ir muito além. Ter um amor tão imenso por uma pessoa a 1 ano é uma coisa mt doida kkkkk e mesmo com os problemas a gente tem que voltar ao normal. É chato dms viver sem te ver, nn queria ficar todo esse tempo assim… Eu quero que tu continue sendo essa pessoa perfeita que tu é, maravilhosa que sempre me ajuda. Sim, você é a pessoa mais perfeita, eu diria q é praticamente tudo que eu tenho. Enfim né, eu te amo muito muito muito muito muito muito 🥰💕</p>
+        
+    </main>
+    
+    <footer>
+
+    </footer>
+    <script>
+        function barras() {
+            let barra = document.getElementById('barrinha');
+            let barraatual = parseInt(barra.style.left, 10);
+            if (barraatual === 0) {
+                barra.style.left = '-135px';
+            } else {
+                barra.style.left = '0px';
+            }
+        }
+        function tematrevo() {
+            resetarBotoes();
+            let texto = document.getElementById('texto')
+            let escolha = document.getElementById('escolha')
+            let cabeca = document.getElementById('cabeca')
+            let barras = document.getElementById('barrinha')
+            let trevo = document.getElementById('cloves')
+            texto.innerHTML = 'É, 1 ano kkkkkkk, bem legal né? Pse, nunca achei q eu conseguiria chegar a 1 ano de namoro com alguém, pq eu achava q ninguém conseguiria ficar cmg por um bom tempo kk, e deve ser difícil conviver comigo, pq eu sou mt chata as vezes e tals, mas eu agradeço por continuar cmg kkkk. Quando eu te conheci eu não achava q tu iria se tornar meu mundo, literalmente, você foi a melhor pessoa que eu conheci na minha vida. Então, obrigada ne, por estar sempre cmg e por nunca desistir de mim msm q as vezes tu queira eu acho. Você é tudo pra mim entende? Kkkk eu te amo tanto, você é uma pessoa totalmente incrível e perfeito pra mim. Você me faz tão feliz e, sinceramente, eu não sei oq teria acontecido cmg se tu n tivesse entrado na minha vida, tu me ajudou a passar por tanta coisa. Você é o melhor namorado do mundo e tipo, além de tu ser meu namorado, tu é meu melhor amigo, tu ta sempre cmg, nas horas boas e ruins, eu n quero te perder, tu é muito importante pra mim. Quero que vc seja minha estrelinha pra sempre, e q isso demore muito pra acabar, q demore bilhões de anos kkkk, e independente de qualquer coisa, eu vou estar aqui sempre. Eu te amo demais estrelinha 💖'
+            escolha.innerHTML = 'Trevo'
+            trevo.style.scale = '1.1'
+            trevo.style.background = '#008000'
+            trevo.style.boxShadow = '0 2px black'
+            document.body.style.backgroundImage = 'url("../imagens/papel-trevo.jpg")'
+            document.body.style.backgroundSize = 'cover'
+            barras.style.background = '#50eb50'
+            cabeca.style.background = '#79ff79'
+            barras.style.borderRight = 'solid 2px #238b23'
+            barras.style.borderBottom = 'solid 2px #238b23'
+            cabeca.style.borderBottom = 'solid 2px #238b23'
+        }
+
+        function temaestrela() {
+            resetarBotoes();
+            let cabeca = document.getElementById('cabeca')
+            let texto = document.getElementById('texto')
+            let escolha = document.getElementById('escolha')
+            let barras = document.getElementById('barrinha')
+            let estrela = document.getElementById('star')
+            escolha.innerHTML = 'Estrela'
+            texto.innerHTML = 'Amor, hoje é nosso dia né, eu nn sei nem como eu começo isso kkkkkkk mas sla. É um dia muito especial pra mim, mas seria muito mais se eu tivesse do teu lado, a saudade é tanta q sla, tenho inveja de quem te vê todo dia. A gente passou mt tempo juntos e eu quero q vá muito muito longe mesmo, até pq tu é a pessoa q eu mais amo nesse mundo, que me ajuda quando eu preciso, sempre tá do meu lado pra tudo, e pode ter certeza que eu nunca vou deixar de fazer o mesmo por ti, tu é a pessoa mais incrível desse mundo, eu quero q tu fique comigo por bastante tempo e q nn me deixe pra trás. Pode ter certeza q se um dia eu te perder pode ser um dos dias mais tristes da minha vida, e eu nn quero q isso nn aconteça nunca, até pq tu é mt especial, eu não tenho palavras pra descrever o tanto de coisas que eu sinto por ti, é um amor imenso e eu nn quero deixar de sentir isso. A gente já passou por muita coisa nesses 1 ano, é muito amor envolvido, eu já fiz muita merda, e eu tento até hj não repetir aquelas coisas novamente. As vezes eu imagino tantas coisas, sla, o meu desejo é te encontrar de novo, poder sentir aquele abraço de novo e dizer na tua frente o quão tu é importante pra mim, eu tenho saudade daquele abraço gostoso que a gente dava no intervalo kkkkkkk, quando eu to deitado eu começo a lembrar daquele abraço, daquelas coisas que a gente fazia junto e choro. Neném, eu não quero q isso tudo acabe, tu foi a pessoa mais importante q já apareceu na minha vida, a melhor coisa q aconteceu, e pode ter certeza q eu nunca vou te abandonar, tu é a MINHA Princesa, a mais bela, mais linda, cê é tudo de bom. Mo, eu sempre vou tá aqui pra conversar contigo, te ajudar em tudo que tu precise, te ajudar a superar teus problemas, e tu sabe que eu nunca gosto de te ver triste. Tu mora no meu coração, sempre quando eu vejo tuas fotos eu sinto várias coisa, saudade, vejo como tu é mt linda kkkkkkkk, eu penso nas coisas que a gente fazia, sim essas fotos são especiais. Bebezinha, tu sabe que desde o começo eu gostei de ti, é um amor imenso, eu já gostava de ti antes de a gente se falar kkkkkk, se isso tudo acabasse iria me destruir por completo, sabia? Tu é a única pessoa q me faz continuar aq, e lembra da minha meta? Pse, não chego nem na metade, mas eu quero cumprir ela e ir muito além. Ter um amor tão imenso por uma pessoa a 1 ano é uma coisa mt doida kkkkk e mesmo com os problemas a gente tem que voltar ao normal. É chato dms viver sem te ver, nn queria ficar todo esse tempo assim… Eu quero que tu continue sendo essa pessoa perfeita que tu é, maravilhosa que sempre me ajuda. Sim, você é a pessoa mais perfeita, eu diria q é praticamente tudo que eu tenho. Enfim né, eu te amo muito muito muito muito muito muito 🥰💕'
+            estrela.style.scale = '1.1'
+            document.body.style.backgroundImage = 'url("../imagens/papel-estrela.jpg")'
+            document.body.style.backgroundSize = 'cover'
+            estrela.style.background = '#e5e619'
+            estrela.style.boxShadow = '0 2px black'
+            barras.style.background = '#ebeb50'
+            cabeca.style.background = '#ffff63'
+            barras.style.borderRight = 'solid 2px #cece4b'
+            barras.style.borderBottom = 'solid 2px #cece4b'
+            cabeca.style.borderBottom = 'solid 2px #cece4b'
+        }
+        function resetarBotoes() {
+            const botoes = document.querySelectorAll('button');
+            botoes.forEach(botao => {
+                botao.style.scale = '1';
+                botao.style.background = '#ffffff00';
+                botao.style.boxShadow = 'none'
+            });
+
+        }
+
+
+    </script>
+</body>
+
+</html>
